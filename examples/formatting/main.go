@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/legrch/logger/pkg/logger"
+	"github.com/legrch/logger"
 )
 
 func main() {

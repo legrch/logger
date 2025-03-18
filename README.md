@@ -3,7 +3,7 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/legrch/logger.svg)](https://pkg.go.dev/github.com/legrch/logger)
 [![Go Report Card](https://goreportcard.com/badge/github.com/legrch/logger)](https://goreportcard.com/report/github.com/legrch/logger)
 [![License](https://img.shields.io/github/license/legrch/logger)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/legrch/logger)](https://github.com/legrch/logger/releases)
+[![Release](https://img.shields.io/github/v/release/github.com/legrch/logger)](https://github.com/legrch/logger/releases)
 
 A structured logging package for Go applications built on top of the standard library's [slog](https://pkg.go.dev/log/slog) package.
 
@@ -39,12 +39,12 @@ func main() {
 	cfg := &logger.Config{
 		Level:           "info",
 		Format:          "text",
-		Color:           true,
-		CallerEnabled:   true,
+		EnableColors:    true,
+		EnableCaller:    true,
 		CallerSkipFrame: 1,
 	}
 	
-	log := logger.New(cfg, os.Stdout)
+	log := logger.New(cfg)
 	
 	// Use the logger
 	log.Info("application started", "version", "1.0.0")
@@ -68,8 +68,7 @@ func main() {
 For detailed documentation, examples, and API reference, please visit:
 
 - [Package Documentation](https://pkg.go.dev/github.com/legrch/logger)
-- [Examples](https://github.com/legrch/logger/tree/main/pkg/logger/examples)
-- [Logger Package Documentation](pkg/logger/README.md)
+- [Examples](https://github.com/legrch/logger/tree/main/examples)
 
 ## License
 

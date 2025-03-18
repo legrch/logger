@@ -58,5 +58,5 @@ When using the logger package, consider these best practices:
 
 ## Related Documentation
 
-- [Logger Package Documentation](https://pkg.go.dev/github.com/legrch/logger/pkg/logger)
+- [Logger Package Documentation](https://pkg.go.dev/github.com/legrch/logger)
 - [Go's slog Package](https://pkg.go.dev/log/slog) - The standard library package this logger builds upon 
